@@ -46,7 +46,7 @@ animations = [{
 size = Vector2(32, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vrenf"]
-size = Vector2(30, 32)
+size = Vector2(26, 32)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 script = ExtResource("1_7r2k8")

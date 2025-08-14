@@ -1,21 +1,21 @@
-[gd_scene load_steps=8 format=3 uid="uid://beugjugtjyfxu"]
+[gd_scene load_steps=8 format=3 uid="uid://u8hkobhrbyj7"]
 
 [ext_resource type="Texture2D" uid="uid://bd1xn2wcy0156" path="res://assets/map/blocks.png" id="1_1vf7u"]
-[ext_resource type="Script" uid="uid://m047jn3kllgr" path="res://szenes/map/block.gd" id="1_bylsw"]
+[ext_resource type="Script" uid="uid://nvndry4tbp6k" path="res://szenes/map/hidden_block.gd" id="1_jf0rv"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_i5qsg"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1v5bo"]
 atlas = ExtResource("1_1vf7u")
-region = Rect2(64, 0, 32, 32)
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1ffvo"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_tcrqh"]
 atlas = ExtResource("1_1vf7u")
-region = Rect2(0, 64, 32, 32)
+region = Rect2(64, 64, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ji76t"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_i5qsg")
+"texture": SubResource("AtlasTexture_1v5bo")
 }],
 "loop": true,
 "name": &"default",
@@ -23,7 +23,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1ffvo")
+"texture": SubResource("AtlasTexture_tcrqh")
 }],
 "loop": true,
 "name": &"opend",
@@ -37,7 +37,7 @@ size = Vector2(32, 32)
 size = Vector2(26, 32)
 
 [node name="StaticBody2D" type="StaticBody2D"]
-script = ExtResource("1_bylsw")
+script = ExtResource("1_jf0rv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(8, -8)
