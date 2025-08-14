@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://4sckd7dn05q8"]
 
-[ext_resource type="Script" path="res://shroom.gd" id="1_del7h"]
+[ext_resource type="Script" uid="uid://oebql5cavgxt" path="res://szenes/enemy/shroom/shroom.gd" id="1_del7h"]
 [ext_resource type="Texture2D" uid="uid://cfixlpp47soyw" path="res://assets/map/Tiles.png" id="2_lxl8t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ydmim"]

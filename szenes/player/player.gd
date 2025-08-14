@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 # Bewegung
 @export var move_speed = glob_player.move_speed
 @export var acceleration = glob_player.acceleration
