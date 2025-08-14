@@ -1,18 +1,19 @@
 extends CharacterBody2D
 
+
 # Bewegung
-@export var move_speed := 200.0
-@export var acceleration := 1200.0
-@export var deceleration := 1000.0
+@export var move_speed = glob_player.move_speed
+@export var acceleration = glob_player.acceleration
+@export var deceleration = glob_player.deceleration
 
 # Springen
-@export var jump_velocity := -300.0
-@export var gravity := 1200.0
-@export var max_jump_time := 0.2
-@export var jump_boost_velocity := -250.0
+@export var jump_velocity = glob_player.jump_velocity
+@export var gravity = glob_player.gravity
+@export var max_jump_time = glob_player.max_jump_time
+@export var jump_boost_velocity = glob_player.jump_boost_velocity
 
-@export var fast_fall_multiplier := 2.5         # Verstärkte Gravitation beim Runterfallen
-@export var low_gravity_multiplier := 0.5       # Weniger Gravitation beim Halten der Sprungtaste
+@export var fast_fall_multiplier = glob_player.fast_fall_multiplier       # Verstärkte Gravitation beim Runterfallen
+@export var low_gravity_multiplier = glob_player.low_gravity_multiplier      # Weniger Gravitation beim Halten der Sprungtaste
 
 @onready var sprite = $AnimatedSprite2D
 
