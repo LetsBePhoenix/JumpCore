@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1yxeic4b2ahm"]
+
+[ext_resource type="Texture2D" uid="uid://bd1xn2wcy0156" path="res://assets/map/blocks.png" id="1_1gkob"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jnpbj"]
+atlas = ExtResource("1_1gkob")
+region = Rect2(0, 96, 64, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h33q2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jnpbj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Bush" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_h33q2")
+offset = Vector2(16, -8)
