@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfau3mrudmsjb"]
+
+[ext_resource type="Script" uid="uid://dfg80bjnlx671" path="res://szenes/map/lobby.gd" id="1_e0ppf"]
+[ext_resource type="Texture2D" uid="uid://bdwews5vemb68" path="res://icon.svg" id="2_at8jh"]
+
+[node name="Lobby" type="Node2D"]
+script = ExtResource("1_e0ppf")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_right = 1152.0
+offset_bottom = 225.0
+theme_override_font_sizes/font_size = 150
+text = "Test"
+
+[node name="Pic_Map1" type="TextureRect" parent="."]
+offset_left = 34.0
+offset_top = 254.0
+offset_right = 162.0
+offset_bottom = 382.0
+texture = ExtResource("2_at8jh")
+
+[node name="Pic_Map2" type="TextureRect" parent="."]
+offset_left = 225.0
+offset_top = 257.0
+offset_right = 353.0
+offset_bottom = 385.0
+texture = ExtResource("2_at8jh")
