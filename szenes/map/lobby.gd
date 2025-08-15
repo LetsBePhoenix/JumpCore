@@ -1,6 +1,7 @@
 extends Node2D
 
-@onready var buttonMap1 = $Map1
+@onready var pic_map1 = $Pic_Map1
+var mapScene = "res://szenes/map/map.tscn"
 var chosenMap = 1
 var lobbyTimer = 0
 
@@ -15,10 +16,13 @@ func _physics_process(delta: float) -> void:
 			chosenMap = 1
 		elif chosenMap >= glob_lobby.maxMaps:
 			chosenMap = glob_lobby.maxMaps
+		if chosenMap == 1:
+			mapScene = "res://szenes/map/map.tscn"
+			
+			
+			
+		# Weitere Karten
 		if Input.get_action_raw_strength("game_start"):
-			if chosenMap == 1:
-				get_tree().root.add_child(load("res://szenes/map/map.tscn").instantiate())
-				queue_free()
-			# Weitere Karten
+			get_tree().root.add_child(load(mapScene).instantiate())
+			queue_free()
 		print(chosenMap)
-	lobbyTimer += 1
